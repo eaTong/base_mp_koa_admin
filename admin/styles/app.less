@@ -1,0 +1,34 @@
+@import "~antd/lib/style/themes/default";
+@import "variable";
+@import "~antd/dist/antd.less";
+@import "~@eatong/reactable/dist/styles/variable";
+
+@primaryColor: @primary-color;
+@errorColor: #ff5722;
+@bgColor: #eceff1;
+@cellHeight: 40px;
+
+@import "~@eatong/reactable/dist/styles/reactable";
+@import "blog";
+@import "reactable-demo";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+
+  & > * {
+    height: 100%;
+    width: 100%;
+  }
+}
