@@ -14,7 +14,7 @@ if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
 }
 
-const output = fs.createWriteStream(`build/slyx-${moment().format('YYYY-MM-DD')}build.zip`);
+const output = fs.createWriteStream(`build/mp-${moment().format('YYYY-MM-DD')}build.zip`);
 const archive = archiver('zip', {
   zlib: {level: 9} // Sets the compression level.
 });
